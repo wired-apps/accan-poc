@@ -54,38 +54,7 @@
   @media screen and (max-width: 600px) {
     .pbi-desktop { display: none; }
     .pbi-mobile { display: flex; }
-  }
 
-  .pbi-wix-container {
-    position: relative;
-    width: 95%;
-    max-width: 1400px;
-    height: 1850px;
-    overflow: hidden;
-    background: #ffffff;
-  }
-
-  .pbi-wix-container iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
-
-  /* Hide Power BI footer toolbar */
-  .pbi-wix-container::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background: #ffffff;
-    z-index: 9999;
-    pointer-events: none;
-  }
-
-  /* Mobile */
-  @media screen and (max-width: 768px){
     .top-header {
       padding: 16px;
     }
@@ -98,11 +67,11 @@
       font-size: 26px;
       padding: 24px;
     }
-
-    .pbi-wix-container {
-      height: 3050px;
-    }
   }
+
+
+
+
 </style>
 </head>
 
@@ -118,15 +87,11 @@
   </div>
 
   <div class="pbi-desktop">
-    <div class="pbi-wix-container">
-      <iframe title="ACCAN_POC" width="100%" height="2000" src="https://app.powerbi.com/view?r=eyJrIjoiNjBhZTAzNDktZDQyNy00MDIxLTkwMzUtM2FiZWRmOGJhMjY0IiwidCI6IjgxMDgzMGFjLTQ1YmEtNDU4Yy1hZDg0LTBlMmFiNGQ4NWRhNSJ9" frameborder="0" allowFullScreen="true"></iframe>
-    </div>
+    <iframe title="ACCAN_POC" width="100%" height="2050" src="https://app.powerbi.com/view?r=eyJrIjoiNjBhZTAzNDktZDQyNy00MDIxLTkwMzUtM2FiZWRmOGJhMjY0IiwidCI6IjgxMDgzMGFjLTQ1YmEtNDU4Yy1hZDg0LTBlMmFiNGQ4NWRhNSJ9" frameborder="0" allowFullScreen="true"></iframe>
   </div>
   
   <div class="pbi-mobile">
-    <div class="pbi-wix-container">
-      <iframe title="ACCAN_POC_Single" width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiOWQ2Yjg5MWMtZWI0MC00NjkyLWFkNmEtNmJiMjQzNTQ0ZDViIiwidCI6IjgxMDgzMGFjLTQ1YmEtNDU4Yy1hZDg0LTBlMmFiNGQ4NWRhNSJ9" frameborder="0" allowFullScreen="true"></iframe>
-    </div>
+    <iframe title="ACCAN_POC_Single" width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiOWQ2Yjg5MWMtZWI0MC00NjkyLWFkNmEtNmJiMjQzNTQ0ZDViIiwidCI6IjgxMDgzMGFjLTQ1YmEtNDU4Yy1hZDg0LTBlMmFiNGQ4NWRhNSJ9" frameborder="0" allowFullScreen="true"></iframe>
   </div>
 
 </body>
